@@ -1,0 +1,194 @@
+/* Global */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Montserrat', 'sans-serif';
+  font-size: 16px;
+  color: #ddd;
+  background-color: #071e3d;
+}
+
+p {
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+span {
+  color: #ff304f;
+}
+
+a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ff304f;
+}
+
+li {
+  color: #333;
+}
+
+hr {
+  background-color: #ccc;
+}
+
+.btn {
+  background-color: #ff304f;
+  color: #fff;
+  border: none;
+}
+
+.btn-view {
+  color: #000;
+  font-weight: bolder;
+  background-color: #F5C518;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background:url("../img/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg") center center;
+  background-size: cover;
+  border-radius: 0;
+  padding: 10px;
+  height: 50vh;
+}
+
+.navbar {
+  margin-bottom: 50px;
+}
+
+.jumbotron h3 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 30px 0;
+  text-shadow: 2px 2px #555;
+}
+
+.jumbotron input[type="text"] {
+  width: 50%;
+  display: inline;
+}
+
+.jumbotron input[type="submit"] {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 0.9rem;
+  background-color: #ff304f;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+/* Movie Poster */
+#movies img, #movie img{
+  width:100%;
+  height: 100%;
+}
+
+.well {
+  animation: fadeIn 1s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Loader */
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  width: 80px;
+  height: 100px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #28c7fa;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+/* Modal */
+#myModal {
+  color: #000;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 100px;
+  height: 100px;
+}
+
+/* Media Queries */
+@media(min-width:960px){
+  #movies .col-md-3 .well{
+    height: 400px;
+  }
+
+  #movies .col-md-3 img{
+    height:240px;
+  }
+}

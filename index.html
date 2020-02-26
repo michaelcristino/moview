@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MovieInfo</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="jumbotron">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html">Mo<span>vie</span>w</a>
+        </div>
+      </nav>
+
+    	
+	    	<h3 class="text-center">Search For Any Movie</h3>
+	    	<form id="searchForm" class="text-center">
+          <input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
+          <input class="btn" type="submit" name="submit" value="Search">
+        </form>
+        </div>
+	    </div>
+
+    <div class="container">
+      <div id="movies" class="row"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="myModalLongTitle">Movie Not Found!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Search for another movie
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-dismiss="modal">Seach Again</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>
